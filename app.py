@@ -20,7 +20,7 @@ with open('scaler.pkl', 'rb') as f:
 st.title("Customer Churn Prediction")
 
 #user input
-geography = st.selectbox("Geography", onehotencoder_geo.categories_[0])
+Geography = st.selectbox("Geography", onehotencoder_geo.categories_[0])
 gender = st.selectbox("Gender", label_encoder_gender.classes_)
 age = st.number_input("Age", 18,92)
 balance = st.number_input("Balance")
